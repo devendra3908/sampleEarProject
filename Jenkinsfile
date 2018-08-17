@@ -16,7 +16,7 @@ pipeline {
     stage('Docker Build image') {
       agent any
       steps {
-        sh 'docker build -t devendra3908/sampleearproject:1.1 .'
+        sh 'docker build -t devendra3908/sampleearproject:latest ./Dockerfile'
       }
     } 
     stage('Docker Pull Image') {
