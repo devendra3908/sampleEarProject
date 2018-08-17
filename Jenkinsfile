@@ -16,7 +16,7 @@ pipeline {
     stage('Docker Build image') {
       agent any
       steps {
-        sh 'docker build -t devendra3908/sampleearproject:latest ./Dockerfile'
+        sh 'docker build -t devendra3908/sampleearproject:latest ./docker-compose.yml .'
       }
     } 
     stage('Docker Pull Image') {
