@@ -19,12 +19,10 @@ pipeline {
         sh 'docker build -t devendra3908/sampleearproject:latest .'
       }
     } 
-    stage('Docker Pull Image') {
+    stage('Docker Build image for Operating System') {
       agent any
       steps {
-        sh 'docker pull ubuntu:18.04'
-        sh 'docker tag ubuntu:18.04 dockerfile/ubuntu:18.04'
-        sh 'docker push dockerfile/ubuntu:18.04'
+        sh 'docker build -t devendra3908/ubuntujava8tomcat:latest .'        
       }
     }
   }
