@@ -13,13 +13,7 @@ pipeline {
         sh 'mvn clean install'
       }
     }
-    stage('Docker Build image') {
-      agent any
-      steps {
-        sh 'docker build -t devendra3908/sampleearproject:latest .'
-      }
-    } 
-    stage('Docker Build image for Operating System') {
+     stage('Docker Build image for Operating System') {
       agent any
       steps {
         sh 'docker build -t devendra3908/ubuntujava8tomcat:latest .'        
