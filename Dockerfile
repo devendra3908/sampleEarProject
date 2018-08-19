@@ -3,8 +3,8 @@ ARG ubuntuversion
 ARG tomcatmajor
 ARG tomcatversion
 ARG jdkversion
-FROM ubuntu:$ubuntuversion
- 
+FROM ubuntu:18.04
+ RUN echo "$ubuntuversion"
 MAINTAINER Devendra Prasad
 
 ENV TOMCAT_VERSION ${tomcatversion}
