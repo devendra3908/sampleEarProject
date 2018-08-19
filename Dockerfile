@@ -1,9 +1,8 @@
-ARG ubuntuversion = $ubuntuversion
-ENV ubuntuversion $ubuntuversion
-RUN echo $ubuntuversion
-#ARG tomcatmajor
-#ARG tomcatversion
-#ARG jdkversion
+RUN echo "$ubuntuversion"
+ARG ubuntuversion
+ARG tomcatmajor
+ARG tomcatversion
+ARG jdkversion
 FROM ubuntu:$ubuntuversion
  
 MAINTAINER Devendra Prasad
