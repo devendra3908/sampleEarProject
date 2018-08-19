@@ -1,6 +1,5 @@
 ARG ubuntuversion
-FROM ubuntu:18.04
-echo $ubuntuversion
+FROM ubuntu:$ubuntuversion
  
 MAINTAINER Devendra Prasad
 
