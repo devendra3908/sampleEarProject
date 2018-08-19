@@ -1,7 +1,7 @@
-ARG ubuntuversion
-ARG tomcatmajor
-ARG tomcatversion
-ARG jdkversion
+#ARG ubuntuversion
+#ARG tomcatmajor
+#ARG tomcatversion
+#ARG jdkversion
 FROM ubuntu:${ubuntuversion}
  
 MAINTAINER Devendra Prasad
