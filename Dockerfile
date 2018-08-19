@@ -1,4 +1,4 @@
-ARG ubuntuversion
+ARG ubuntuversion = $ubuntuversion
 ENV ubuntuversion $ubuntuversion
 RUN echo $ubuntuversion
 #ARG tomcatmajor
