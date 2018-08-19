@@ -1,4 +1,6 @@
 ARG ubuntuversion
+ENV ubuntuversion $ubuntuversion
+RUN echo $ubuntuversion
 #ARG tomcatmajor
 #ARG tomcatversion
 #ARG jdkversion
