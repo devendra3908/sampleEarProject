@@ -1,9 +1,10 @@
-ARG UBUNTU-VERSION
-FROM ubuntu:UBUNTU-VERSION
-
+ARG ubuntuversion
+FROM ubuntu:18.04
+echo $ubuntuversion
+ 
 MAINTAINER Devendra Prasad
 
-ENV TOMCAT_VERSION $TOMCAT-VERSION
+ENV TOMCAT_VERSION $tomcatversion
 
 # Set locales
 RUN apt-get clean && apt-get update && apt-get install -y locales
@@ -40,8 +41,8 @@ WORKDIR $CATALINA_HOME
 # see https://www.apache.org/dist/tomcat/tomcat-8/KEYS
 
 
-ENV TOMCAT_MAJOR $TOMCAT_MAJOR
-ENV TOMCAT_VERSION $TOMCAT_VERSION
+ENV TOMCAT_MAJOR $tomcatmajor
+ENV TOMCAT_VERSION $tomcatversion
 ENV TOMCAT_TGZ_URL https://www.apache.org/dist/tomcat/tomcat-$TOMCAT_MAJOR/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz
 
 RUN set -x \
