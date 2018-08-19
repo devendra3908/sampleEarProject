@@ -1,3 +1,4 @@
+ARG UBUNTU-VERSION = $UBUNTU-VERSION
 FROM ubuntu:$UBUNTU-VERSION
 
 MAINTAINER Carlos Moro <cmoro@deusto.es>
