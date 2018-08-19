@@ -1,5 +1,9 @@
 ARG ubuntuversion
 ARG tomcatmajor
 ARG tomcatversion
-FROM ubuntu:$ubuntuversion
-RUN echo $ubuntuversion
+FROM ubuntu:ubuntuversion
+ 
+MAINTAINER Devendra Prasad
+
+ENV TOMCAT_VERSION ${tomcatversion}
+RUN echo ${ubuntuversion}
