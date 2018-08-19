@@ -20,7 +20,7 @@ pipeline {
           echo ${params.TOMCAT_MAJOR}
           echo ${params.UBUNTU}
           echo ${params.TOMCAT}
-        sh "docker build -t devendra3908/ubuntujava8tomcat:latest --build-arg JDK-VERSION='${params.JDK}' --build-arg TOMCAT-MAJOR='${params.TOMCAT_MAJOR}' --build-arg UBUNTU-VERSION=$'{params.UBUNTU}' --build-arg TOMCAT-VERSION='${params.TOMCAT}' ."
+        //sh "docker build -t devendra3908/ubuntujava8tomcat:latest --build-arg JDK-VERSION='${params.JDK}' --build-arg TOMCAT-MAJOR='${params.TOMCAT_MAJOR}' --build-arg UBUNTU-VERSION=$'{params.UBUNTU}' --build-arg TOMCAT-VERSION='${params.TOMCAT}' ."
       }
     }
   }
