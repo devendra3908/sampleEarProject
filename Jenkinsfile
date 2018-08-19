@@ -16,7 +16,7 @@ pipeline {
      stage('Docker Build image for Operating System') {
       agent any
       steps {
-	  echo "${params.JDK}
+	  echo "${params.JDK}"
           echo "${params.TOMCAT_MAJOR}"
           echo "${params.UBUNTU}"
           echo "${params.TOMCAT}"
