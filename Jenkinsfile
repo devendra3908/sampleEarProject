@@ -16,7 +16,7 @@ pipeline {
      stage('Docker Build image for Operating System') {
       agent any
       steps {
-        sh 'docker build -t devendra3908/ubuntujava8tomcat:latest --build-arg JDK-VERSION=${env.JDK-VERSION} --build-arg TOMCAT-MAJOR=${env.TOMCAT-MAJOR} --build-arg UBUNTU-VERSION=${env.UBUNTU-VERSION} --build-arg TOMCAT-VERSION=${env.TOMCAT-VERSION} .'
+        sh 'docker build -t devendra3908/ubuntujava8tomcat:latest --build-arg JDK-VERSION=$JDK-VERSION --build-arg TOMCAT-MAJOR=$TOMCAT-MAJOR --build-arg UBUNTU-VERSION=$UBUNTU-VERSION --build-arg TOMCAT-VERSION=$TOMCAT-VERSION .'
       }
     }
   }
