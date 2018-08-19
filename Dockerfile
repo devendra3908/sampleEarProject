@@ -1,7 +1,7 @@
 ARG ubuntuversion
 ARG tomcatmajor
 ARG tomcatversion
-FROM ubuntu:ubuntuversion
+FROM ubuntu:${ubuntuversion}
  
 MAINTAINER Devendra Prasad
 
