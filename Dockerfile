@@ -1,4 +1,3 @@
-RUN echo "$ubuntuversion"
 ARG ubuntuversion
 ARG tomcatmajor
 ARG tomcatversion
